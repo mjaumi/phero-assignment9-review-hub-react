@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+    //header component renders here
     return (
-        <header className='bg-book-hub-base text-white py-5'>
+        <header className='absolute w-full bg-book-hub-base text-white py-5'>
             <div className='flex justify-between w-4/5 mx-auto'>
                 <div>
                     <h2><span className='font-semibold text-3xl'>Book</span>Hub</h2>
