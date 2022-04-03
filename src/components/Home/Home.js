@@ -7,6 +7,7 @@ const Home = () => {
     //calling custom hooks
     const [reviews] = useReviews();
 
+    //using navigate hooks to navigate to review page
     const navigate = useNavigate();
 
     //home component renders here
@@ -28,10 +29,10 @@ const Home = () => {
             </div>
             {/* user review section */}
             <div className='pb-32 w-4/5 mx-auto'>
-                <h2 className='text-3xl text-review-hub-base-green font-semibold mb-7'>Customer Reviews(3)</h2>
+                <h2 className='text-3xl text-review-hub-base-green font-semibold mb-7'>Customer Reviews({reviews.slice(0, 3).length})</h2>
                 <div className='grid grid-cols-3 gap-10 mt-10'>
                     {
-                        reviews.map(review => <Review
+                        reviews.slice(0, 3).map(review => <Review
                             key={review.id}
                             review={review}
                         ></Review>)
