@@ -1,9 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
 
 const Home = () => {
+    //calling custom hooks
     const [reviews] = useReviews();
+
+    const navigate = useNavigate();
 
     //home component renders here
     return (
@@ -34,7 +38,7 @@ const Home = () => {
                     }
                 </div>
                 <div className='text-review-hub-base mt-28'>
-                    <button className='bg-review-hub-base-green px-5 py-3 rounded-lg font-semibold hover:opacity-50 duration-300'>See All Reviews</button>
+                    <button onClick={() => navigate('/reviews')} className='bg-review-hub-base-green px-5 py-3 rounded-lg font-semibold hover:opacity-50 duration-300'>See All Reviews</button>
                 </div>
             </div>
         </section>

@@ -12,7 +12,7 @@ const Header = () => {
                 <div className='flex items-center'>
                     <nav className='flex text-xl font-light'>
                         <Link to='/' className='hover:opacity-50 hover:font-semibold duration-300 origin-center'>Home</Link>
-                        <p className='ml-5'>Reviews</p>
+                        <Link to='/reviews' className='ml-5 hover:opacity-50 hover:font-semibold duration-300 origin-center'>Reviews</Link>
                         <p className='ml-5'>Dashboard</p>
                         <p className='ml-5'>Blogs</p>
                         <p className='ml-5'>About</p>
