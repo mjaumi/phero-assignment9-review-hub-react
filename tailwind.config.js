@@ -5,8 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'book-hub-base': '#002259',
-        'book-hub-base-light': '#4474c2',
+        'review-hub-base': '#201f24',
+        'review-hub-base-green': '#9aef0a',
+        'review-hub-base-green-light': '#b7eb60',
+        'review-hub-base-dark': '#19181c',
       }
     },
   },

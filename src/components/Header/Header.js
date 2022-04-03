@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     //header component renders here
     return (
-        <header className='absolute w-full bg-book-hub-base text-white py-5'>
+        <header className='fixed w-full bg-review-hub-base-dark text-review-hub-base-green py-5'>
             <div className='flex justify-between w-4/5 mx-auto'>
                 <div>
-                    <h2><span className='font-semibold text-3xl'>Book</span>Hub</h2>
+                    <h2><span className='font-semibold text-3xl'>Review</span>Hub</h2>
                 </div>
                 <div className='flex items-center'>
                     <nav className='flex text-xl font-light'>
