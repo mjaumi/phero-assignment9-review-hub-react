@@ -23,15 +23,18 @@ const Home = () => {
                 </div>
             </div>
             {/* user review section */}
-            <div className='pb-52'>
+            <div className='pb-32 w-4/5 mx-auto'>
                 <h2 className='text-3xl text-review-hub-base-green font-semibold mb-7'>Customer Reviews(3)</h2>
-                <div>
+                <div className='grid grid-cols-3 gap-10 mt-10'>
                     {
                         reviews.map(review => <Review
                             key={review.id}
                             review={review}
                         ></Review>)
                     }
+                </div>
+                <div className='text-review-hub-base mt-28'>
+                    <button className='bg-review-hub-base-green px-5 py-3 rounded-lg font-semibold hover:opacity-50 duration-300'>See All Reviews</button>
                 </div>
             </div>
         </section>
