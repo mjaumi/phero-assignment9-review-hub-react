@@ -10,7 +10,7 @@ const CustomLink = ({ children, to, ...props }) => {
             <Link style={{ borderBottom: match ? "2px solid #9aef0a" : "none" }}
                 to={to}
                 {...props}
-                className='inline-block px-3 py-2 mt-1 md:mt-0 md:ml-5 hover:opacity-50 duration-300'
+                className='inline-block px-3 py-2 mt-1 md:mt-0 md:ml-5 hover:opacity-50 duration-300 -z-50'
             >
                 {children}
             </Link>
