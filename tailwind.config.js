@@ -12,7 +12,10 @@ module.exports = {
       },
       gridTemplateRows: {
         'review-card': '100px auto 1fr auto',
-      }
+      },
+      screens: {
+        'laptop': '1430px',
+      },
     },
   },
   plugins: [],
