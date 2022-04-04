@@ -7,12 +7,12 @@ const Dashboard = () => {
 
     return (
         <section className='py-36 min-h-screen'>
-            <h2 className='font-semibold text-4xl mb-20 text-review-hub-base-green'>Sell, Investment & Revenue Data</h2>
-            <div className='grid grid-cols-2 w-4/5 mx-auto gap-y-20'>
+            <h2 className='font-light text-2xl md:text-4xl mb-20 text-review-hub-base-green'>Sell, Investment & Revenue Data</h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 w-[90%] md:w-4/5 mx-auto gap-20'>
                 {/* line chart */}
                 <div className='flex flex-col justify-center items-center'>
                     <h2 className='font-semibold text-2xl mb-4 text-white'>Month Wise Sell</h2>
-                    <LineChart width={400} height={400} data={chart}>
+                    <LineChart width={360} height={360} data={chart}>
                         <Line type="monotone" dataKey="sell" stroke="#9aef0a" />
                         <XAxis dataKey='month' stroke="#ffffff" />
                         <YAxis stroke="#ffffff" />
@@ -23,7 +23,7 @@ const Dashboard = () => {
                 {/* area chart */}
                 <div className='flex flex-col justify-center items-center'>
                     <h2 className='font-semibold text-2xl mb-4 text-white'>Investment VS Revenue</h2>
-                    <AreaChart width={400} height={400} data={chart}>
+                    <AreaChart width={360} height={360} data={chart}>
                         <XAxis dataKey='month' stroke="#ffffff" />
                         <YAxis stroke="#ffffff" />
                         <Tooltip />
@@ -36,7 +36,7 @@ const Dashboard = () => {
                 {/* bar chart */}
                 <div className='flex flex-col justify-center items-center'>
                     <h2 className='font-semibold text-2xl mb-4 text-white'>Investment VS Revenue</h2>
-                    <BarChart width={400} height={400} data={chart}>
+                    <BarChart width={360} height={360} data={chart}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="month" />
                         <YAxis />
@@ -49,7 +49,7 @@ const Dashboard = () => {
                 {/* pie chart  */}
                 <div className='flex flex-col justify-center items-center'>
                     <h2 className='font-semibold text-2xl mb-4 text-white'>Investment VS Revenue</h2>
-                    <PieChart width={400} height={400}>
+                    <PieChart width={360} height={360}>
                         <Tooltip />
                         <Legend />
                         <Pie data={chart} dataKey="investment" cx="50%" cy="50%" outerRadius={90} fill="#9aef0a" stroke="#201f24" />
@@ -57,7 +57,7 @@ const Dashboard = () => {
                     </PieChart>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

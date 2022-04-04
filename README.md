@@ -5,6 +5,7 @@
 ### Features
 
 - This is a reviewing web app on XBox Series X.
+- All the page of this web app are responsive.
 - The home component shows only 3 of the reviews.
 - For designing purpose, **Tailwind CSS Framework** is been used.
 - **Custom Link** is implemented in nav menu.
