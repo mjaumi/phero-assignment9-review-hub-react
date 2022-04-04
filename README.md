@@ -8,7 +8,7 @@
 - All the page of this web app are responsive.
 - The home component shows only 3 of the reviews.
 - For designing purpose, **Tailwind CSS Framework** is been used.
-- **Custom Link** is implemented in nav menu.
+- **Custom Active Link** is implemented in nav menu.
 - On clicking **See All Reviews** button will navigate to **Reviews** page.
 - The Review page shows all the customer reviews.
 - Review Rating done with **React Rating**.
