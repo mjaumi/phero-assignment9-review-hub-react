@@ -1,4 +1,9 @@
 import React from 'react';
+import Rating from 'react-rating';
+import { StarIcon } from '@heroicons/react/solid';
+import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const Review = (props) => {
     //destructuring the properties
@@ -13,11 +18,23 @@ const Review = (props) => {
             <div>
                 <h4 className='font-semibold text-xl mb-6'>{userName}</h4>
             </div>
-            <div>
+            <div className='relative'>
                 <p className='text-lg'>{review}</p>
+                <FontAwesomeIcon
+                    icon={faQuoteRight}
+                    className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[200px] text-review-hub-base-green opacity-20'
+                />
             </div>
-            <div>
-                <p className='mt-10 text-gray-400'><span className='font-semibold text-2xl text-review-hub-base-green'>{rating}</span>/5.00</p>
+            <div className='mt-8 flex justify-center items-center'>
+                <div className='flex items-center h-[30px]'>
+                    <Rating
+                        initialRating={rating}
+                        emptySymbol={<StarIcon className="inline-block h-6 w-6" fill='none' stroke='#9aef0a' />}
+                        fullSymbol={<StarIcon className="inline-block h-6 w-6 text-review-hub-base-green" stroke='#9aef0a' />}
+                        readonly
+                    ></Rating>
+                </div>
+                <p className='ml-2 text-gray-400'><span className='font-semibold text-xl text-review-hub-base-green'>{rating}</span>/<small>5.00</small> </p>
             </div>
         </div>
     );
