@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomLink';
 
 const Header = () => {
     //header component renders here
@@ -11,11 +11,11 @@ const Header = () => {
                 </div>
                 <div className='flex items-center'>
                     <nav className='flex text-xl'>
-                        <Link to='/' className='hover:opacity-50 duration-300 origin-center'>Home</Link>
-                        <Link to='/reviews' className='ml-5 hover:opacity-50 duration-300 origin-center'>Reviews</Link>
-                        <Link to='/dashboard' className='ml-5 hover:opacity-50 duration-300 origin-center'>Dashboard</Link>
-                        <Link to='/blogs' className='ml-5 hover:opacity-50 duration-300 origin-center'>Blogs</Link>
-                        <Link to='/about' className='ml-5 hover:opacity-50 duration-300 origin-center'>About</Link>
+                        <CustomLink to='/'>Home</CustomLink>
+                        <CustomLink to='/reviews'>Reviews</CustomLink>
+                        <CustomLink to='/dashboard'>Dashboard</CustomLink>
+                        <CustomLink to='/blogs'>Blogs</CustomLink>
+                        <CustomLink to='/about'>About</CustomLink>
                     </nav>
                 </div>
             </div>
